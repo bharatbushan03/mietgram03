@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mietGram | MIET Jammu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafafa;
+            color: #1a1a1a; /* Explicit dark text for light mode */
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* Instagram Story Ring Animation */
+        @keyframes storyRotate {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        .story-ring {
+          background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        /* --- VITAL FIX: INPUT VISIBILITY & CONTRAST --- */
+        input, textarea, select {
+            color: #1a1a1a !important; /* Force high-contrast text */
+            -webkit-text-fill-color: #1a1a1a !important; /* Safari Specific Fix */
+            opacity: 1 !important; /* Ensure no accidental ghosting */
+            font-size: 16px !important; /* Prevent iOS auto-zoom on focus */
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: #737373 !important; /* Standard IG placeholder grey */
+            opacity: 1 !important;
+        }
+
+        /* Dark mode support (infrastructure) */
+        .dark body {
+            background-color: #000;
+            color: #f5f5f5;
+        }
+        .dark input, .dark textarea {
+            color: #f5f5f5 !important;
+            -webkit-text-fill-color: #f5f5f5 !important;
+            background-color: #121212 !important;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+    "framer-motion": "https://esm.sh/framer-motion@^11.0.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.475.0",
+    "clsx": "https://esm.sh/clsx@^2.1.1",
+    "tailwind-merge": "https://esm.sh/tailwind-merge@^2.3.0",
+    "cors": "https://esm.sh/cors@^2.8.5",
+    "mongoose": "https://esm.sh/mongoose@^9.0.2",
+    "dotenv": "https://esm.sh/dotenv@^17.2.3",
+    "helmet": "https://esm.sh/helmet@^8.1.0",
+    "express": "https://esm.sh/express@^5.2.1",
+    "socket.io": "https://esm.sh/socket.io@^4.8.3",
+    "express-rate-limit": "https://esm.sh/express-rate-limit@^8.2.1",
+    "nodemailer": "https://esm.sh/nodemailer@^7.0.12",
+    "bcryptjs": "https://esm.sh/bcryptjs@^3.0.3",
+    "jsonwebtoken": "https://esm.sh/jsonwebtoken@^9.0.3",
+    "http": "https://esm.sh/http@^0.0.1-security",
+    "winston": "https://esm.sh/winston@^3.19.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>

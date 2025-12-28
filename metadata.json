@@ -1,0 +1,9 @@
+{
+  "name": "mietGram",
+  "description": "An exclusive high-fidelity Instagram clone for MIET Jammu students and faculty, featuring smart AI captions, real-time feeds, and campus-restricted authentication.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}
